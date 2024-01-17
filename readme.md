@@ -48,3 +48,14 @@
             <p>The name is <span data-ng-bind="firstName"></span></p>
 
         </div>
+
+#### Angular JS Expressions
+
+- AngularJS expressions are written inside double braces: {{ expression }}.
+
+- AngularJS will "output" data exactly where the expression is written:
+
+        <div ng-app="">
+            <p>My first expression: {{ 5 + 5 }}</p>
+
+        </div>
