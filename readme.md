@@ -65,3 +65,17 @@
             <p>Name: <input type="text" ng-model="name"></p>
 
             <p>{{name}}</p>
+
+### AngularJS Applications
+
+- AngularJS modules define AngularJS applications.
+
+- AngularJS controllers control AngularJS applications.
+
+- The ng-app directive defines the application, the ng-controller directive defines the controller.
+
+                var app = angular.module("myApp", []);
+                    app.controller("myCtrl", function ($scope) {
+                        $scope.firstName = "Lucky";
+                        $scope.lastName = "Kashyap";
+                });

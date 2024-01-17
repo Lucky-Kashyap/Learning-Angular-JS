@@ -20,14 +20,38 @@
 
     <!-- Angular JS Expressions -->
 
-    <div ng-app="">
-      <!-- <p>My first expression: {{ 5 + 5 }}</p> -->
-      <!-- <p>Angular JS Expression {{20*20}}</p> -->
-      <!-- <p>{{function(){console.log('hello')}()}}</p> -->
-      <!-- <p>{{20+10*8}}</p> -->
+    <!-- <div ng-app=""> -->
+    <!-- <p>My first expression: {{ 5 + 5 }}</p> -->
+    <!-- <p>Angular JS Expression {{20*20}}</p> -->
+    <!-- <p>{{function(){console.log('hello')}()}}</p> -->
+    <!-- <p>{{20+10*8}}</p> -->
 
-      <p>Name: <input type="text" ng-model="name"></p>
+    <!-- <p>Name: <input type="text" ng-model="name"></p>
   <p>{{name}}</p>
+    </div> -->
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+      First Name: <input type="text" ng-model="firstName" /><br />
+      Last Name: <input type="text" ng-model="lastName" /><br />
+      <br />
+      Full Name: {{firstName + " " + lastName}}
+
+      <p>
+        Convert inputs to uppercase {{firstName.toUpperCase()}}
+        {{lastName.toUpperCase()}}
+      </p>
+      <p>
+        Finds whether 'L' is present or not in both strings
+        {{firstName.includes('L')}} {{lastName.includes('L')}}
+      </p>
     </div>
+
+    <script>
+      var app = angular.module("myApp", []);
+      app.controller("myCtrl", function ($scope) {
+        $scope.firstName = "Lucky";
+        $scope.lastName = "Kashyap";
+      });
+    </script>
   </body>
 </html>
