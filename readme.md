@@ -92,6 +92,90 @@
 
         </div>
 
+- AngularJS numbers are like JavaScript numbers:
+
+        <div ng-app="" ng-init="quantity=20;cost=12">
+
+            <p>Total in dollar: {{ quantity * cost }}</p>
+
+        </div>
+
+- Using ng-init : we can create variables & use them in app
+
+- Same example using ng-bind:
+
+        <div ng-app="" ng-init="quantity=28;cost=7.6">
+
+            <p>Total in dollar: <span ng-bind="quantity * cost"></span></p>
+
+        </div>
+
+#### AngularJS Strings
+
+- AngularJS strings are like JavaScript strings:
+
+        <div ng-app="" ng-init="firstName='John';lastName='Doe'">
+
+            <p>The name is {{ firstName + " " + lastName }}</p>
+
+        </div>
+
+- Same example using ng-bind:
+
+        <div ng-app="" ng-init="firstName='John';lastName='Doe'">
+
+             <p>The name is <span ng-bind="firstName + ' ' + lastName"></span></p>
+
+        </div>
+
+#### AngularJS Objects
+
+- AngularJS objects are like JavaScript objects:
+
+        <div ng-app="" ng-init="person={firstName:'Lucky',lastName:'Kashyap'}">
+
+            <p>The name is {{person.firstName}} {{ person.lastName }}</p>
+
+        </div>
+
+- Same example using ng-bind: (bind not work)
+
+        <div ng-app="" ng-init="person={firstName:'John',lastName:'Doe'}">
+
+            <p>The name is <span ng-bind="person.lastName"></span></p>
+
+        </div>
+
+#### AngularJS Arrays
+
+- AngularJS arrays are like JavaScript arrays:
+
+        <div ng-app="" ng-init="points=[1,15,19,2,40]">
+
+            p>The third result is {{ points[2] }}</p>
+
+        </div>
+
+- Same example using ng-bind: (bind not working)
+
+        <div ng-app="" ng-init="points=[1,15,19,2,40]">
+
+            <p>The third result is <span ng-bind="points[2]"></span></p>
+
+        </div>
+
+- In case of Arrays & Objects ng-bind not work
+
+- AngularJS Expressions vs. JavaScript Expressions
+
+- Like JavaScript expressions, AngularJS expressions can contain literals, operators, and variables.
+
+- Unlike JavaScript expressions, AngularJS expressions can be written inside HTML.
+
+- AngularJS expressions do not support conditionals, loops, and exceptions, while JavaScript expressions do.
+
+- AngularJS expressions support filters, while JavaScript expressions do not.
+
 ### AngularJS Applications
 
 - AngularJS modules define AngularJS applications.

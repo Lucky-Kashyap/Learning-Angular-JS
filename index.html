@@ -61,10 +61,57 @@
 
     <!-- Change the color of the input box below, by changing its value: -->
 
-    <div ng-app="" ng-init="myCol='lightblue'">
+    <!-- <div ng-app="" ng-init="myCol='lightblue'">
       <p>U can use rgb, hex code, color names values inside input box</p>
 
       <input style="background-color:{{myCol}}" ng-model="myCol" />
+    </div> -->
+
+    <!-- 
+<div ng-app="" ng-init="quantity=20;cost=12">
+
+<p>Total in dollar: {{ quantity * cost }}</p>
+
+</div> -->
+
+    <!-- <div ng-app="" ng-init="quantity=28;cost=7.5">
+
+<p>Total in dollar: <span ng-bind="quantity * cost"></span></p>
+
+</div> -->
+
+    <!-- AngularJS Strings -->
+
+    <!-- <div ng-app="" ng-init="firstName='Lucky';lastName='Kashyap'">
+      <p>The name is {{ firstName + " " + lastName }}</p>
+    </div>
+
+    <div ng-app="" ng-init="firstName='John';lastName='Doe'">
+      <p>The name is <span ng-bind="firstName + ' ' + lastName"></span></p>
+    </div> -->
+
+    <!-- AngularJS Objects -->
+    <!-- 
+    <div ng-app="" ng-init="person={firstName:'Lucky',lastName:'Kashyap'}">
+      <p>The name is {{person.firstName}} {{ person.lastName }}</p>
+    </div>
+
+    <div ng-app="" ng-init="person={firstName:'John',lastName:'Doe'}">
+      <p>The name is <span ng-bind="person.lastName"></span></p>
+    </div> -->
+
+    <!-- AngularJS Arrays -->
+    <!-- 
+    <div ng-app="" ng-init="points=[1,15,19,2,40]">
+      <p>The third result is {{ points[2] }}</p>
+    </div>
+
+    <div ng-app="" ng-init="points=[1,15,19,2,40]">
+      <p>The third result is <span ng-bind="points[3]"></span></p>
+    </div> -->
+
+    <div ng-app="" ng-init="firstName='John';lastName='Doe'">
+      <p>The name is <span ng-bind="firstName + ' ' + lastName"></span></p>
     </div>
   </body>
 </html>
