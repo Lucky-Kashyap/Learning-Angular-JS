@@ -59,3 +59,9 @@
             <p>My first expression: {{ 5 + 5 }}</p>
 
         </div>
+
+- AngularJS expressions bind AngularJS data to HTML the same way as the ng-bind directive.
+
+            <p>Name: <input type="text" ng-model="name"></p>
+
+            <p>{{name}}</p>
