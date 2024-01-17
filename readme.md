@@ -40,3 +40,11 @@
 - As you have already seen, AngularJS directives are HTML attributes with an ng prefix.
 
 - The ng-init directive initializes AngularJS application variables.
+
+- we can use data-ng-, instead of ng-, if you want to make your page HTML valid.
+
+        <div data-ng-app="" data-ng-init="firstName='John'">
+
+            <p>The name is <span data-ng-bind="firstName"></span></p>
+
+        </div>
