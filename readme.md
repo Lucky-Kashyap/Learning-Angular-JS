@@ -66,6 +66,32 @@
 
             <p>{{name}}</p>
 
+- AngularJS binds data to HTML using Expressions.
+
+- AngularJS expressions can also be written inside a directive: ng-bind="expression".
+
+- AngularJS expressions are much like JavaScript expressions: They can contain literals, operators, and variables.
+
+        {{ 5 + 5 }} or {{ firstName + " " + lastName }}
+
+
+
+            <div ng-app="">
+            <p>My first expression: {{ 5 + 5 }}</p>
+            </div>
+
+- If you remove the ng-app directive, HTML will display the expression as it is, without solving it
+
+#### Let AngularJS change the value of CSS properties.
+
+- Change the color of the input box below, by changing its value:
+
+        <div ng-app="" ng-init="myCol='lightblue'">
+
+        <input style="background-color:{{myCol}}" ng-model="myCol">
+
+        </div>
+
 ### AngularJS Applications
 
 - AngularJS modules define AngularJS applications.
