@@ -257,6 +257,40 @@
         <p>{{x--}}</p>
         <p>{{y++}} {{y--}}</p>
 
+### Commands
+
+- For help
+
+        ng help
+
+- Generating something
+
+        ng generate
+
+- create Module
+
+        ng g m userauth/signin
+
+- create Component
+
+        ng g c register
+
+- Creating class
+
+        ng g class Dummy
+
+- Creating Interface
+
+        ng g interface dummyInterface
+
+- For Building app
+
+        ng build
+
 #### Create Component & use IT
 
 - use command to create component
+
+        ng generate component login
+
+        ng generate c signup
