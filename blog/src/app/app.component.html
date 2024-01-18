@@ -1,10 +1,10 @@
 <div class="toolbar" role="banner">
   <h2>Hello World To Angular JS</h2>
   <p>Writing First program in Angular JS</p>
-  <p>App Name: {{ title }}</p>
+  <!-- <p>App Name: {{ title }}</p>
   <p>User Data: {{ data.name }}, {{ data.age }}</p>
   <h3>{{ data.work }}</h3>
-  <h4>{{ data.locality }}</h4>
+  <h4>{{ data.locality }}</h4> -->
 
   <!-- <p>What we can not do with interpolation</p>
 
@@ -17,13 +17,18 @@
 
   <p>{{new title}}</p> -->
 
-  <p class="{{ title }}">{{ title }}</p>
+  <!-- <p class="{{ title }}">{{ title }}</p> -->
 
   <app-home></app-home>
 
   <app-login></app-login>
   <app-signup></app-signup>
   <app-about></app-about>
-
-  
+  <section>
+    <form>
+      <input type="text" placeholder="Filter by city" />
+      <button type="button">Search</button>
+    </form>
+  </section>
+  <app-services></app-services>
 </div>

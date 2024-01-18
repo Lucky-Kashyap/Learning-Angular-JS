@@ -310,3 +310,11 @@
         ng g c signup
 
         ng g c about
+
+- For skip files generation normally 4-files are created but if we use this command then 2-files are generated
+
+                ng generate component services --inline-template --skip-tests
+
+- Include it in app.component.html file
+
+                <app-services></app-services>
