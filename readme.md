@@ -189,3 +189,15 @@
                         $scope.firstName = "Lucky";
                         $scope.lastName = "Kashyap";
                 });
+
+### Intialize First Angular JS App
+
+- First check node version: It should be greater than 16
+
+- Using CLI command
+
+- Use angular 14 version
+
+        npm -g @angular/cli@14
+
+        ng new blog
