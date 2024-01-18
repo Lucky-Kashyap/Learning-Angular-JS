@@ -1,15 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { HousingLocation } from '../housing-location';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+export class HomeComponent {
+  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
+  housingLocation: HousingLocation = {
+    id: 9999,
+    name: 'Test Home',
+    city: 'Test city',
+    state: 'ST',
+    photo: `${this.baseUrl}/example-house.jpg`,
+    availableUnits: 99,
+    wifi: true,
+    laundry: false,
+  };
 }
