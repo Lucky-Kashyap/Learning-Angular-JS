@@ -200,12 +200,15 @@
 
         npm -g @angular/cli@14
 
+- create folder for angular JS Application
+
+- Run this command
+
         ng new blog
 
 - For running angular server
 
         ng serve
-
 
 #### Interpolation
 
@@ -230,7 +233,30 @@
             <p{{title}}</p>
             <p>User Data: {{data.name}}, {{data.age}}, {{data.work}}, {{data.locality}}</p>
 
+- we can use dynamic class names
+
+              <p class="{{title}}">{{title}}</p>
+
+              .blog {
+                font-size: 3vw;
+                background-color: crimson;
+                color: peachpuff;
+                padding: 1vw;
+              }
+
+- Define data inside app.component.ts
+
+- What we cannot do with Interpolation
+
+        <p>What we can not do with interpolation</p>
+
+        <p>{{title='Change Title'}}</p>
+        <p>{{typeof title}}</p>
+        <p>{{data}}</p>
+        <p>{{x++}}</p>
+        <p>{{x--}}</p>
+        <p>{{y++}} {{y--}}</p>
+
 #### Create Component & use IT
 
 - use command to create component
-

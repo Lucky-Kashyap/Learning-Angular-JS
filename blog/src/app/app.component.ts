@@ -13,4 +13,6 @@ export class AppComponent {
     work: 'Developer',
     locality: 'Jaipur',
   };
+  x=20;
+  y=30;
 }
