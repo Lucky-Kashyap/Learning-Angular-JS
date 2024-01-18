@@ -294,3 +294,11 @@
         ng generate component login
 
         ng generate c signup
+
+        ng g c home
+
+- Use home component via home.component.ts
+
+- Take selector name from it & use it in app.component.html file
+
+        <app-home></app-home>
