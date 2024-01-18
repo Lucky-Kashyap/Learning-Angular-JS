@@ -201,3 +201,36 @@
         npm -g @angular/cli@14
 
         ng new blog
+
+- For running angular server
+
+        ng serve
+
+
+#### Interpolation
+
+- Dynamic Data Display using {{}}
+
+- In app.component.ts
+
+- Define data (property & functions)
+
+            export class AppComponent {
+                title = 'blog';
+                data = {
+                    name: 'Lucky',
+                    age: 22,
+                    work: 'Developer',
+                    locality: 'Jaipur',
+                };
+            }
+
+- Use these properties inside app.component.html file
+
+            <p{{title}}</p>
+            <p>User Data: {{data.name}}, {{data.age}}, {{data.work}}, {{data.locality}}</p>
+
+#### Create Component & use IT
+
+- use command to create component
+
