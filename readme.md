@@ -334,3 +334,14 @@
                 <h2 class="listing-heading">{{ housingLocation.name }}</h2>
                 <p class="listing-location">{{ housingLocation.city}}, {{housingLocation.state }}</p>
         </section>
+
+#### Looop Through Data
+
+- Use \*ngFor to loop through data
+
+                <app-housing-location
+                        *ngFor="let housingLocation of housingLocationList"
+                        [housingLocation]="housingLocation">
+                </app-housing-location>
+
+- It Displays all Cards like list
