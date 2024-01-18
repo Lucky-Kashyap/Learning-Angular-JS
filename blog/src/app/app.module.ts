@@ -8,9 +8,10 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
+import { HousingLocationComponent } from './housing-location/housing-location.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LoginComponent, SignupComponent, AboutComponent, ServicesComponent],
+  declarations: [AppComponent, HomeComponent, LoginComponent, SignupComponent, AboutComponent, ServicesComponent, HousingLocationComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],

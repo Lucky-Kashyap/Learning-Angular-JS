@@ -318,3 +318,5 @@
 - Include it in app.component.html file
 
                 <app-services></app-services>
+
+- Create housing-location component & call it
