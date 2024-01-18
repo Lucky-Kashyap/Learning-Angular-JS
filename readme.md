@@ -320,3 +320,9 @@
                 <app-services></app-services>
 
 - Create housing-location component & call it
+
+- Binds data with housingLocation
+
+                <app-housing-location
+                        [housingLocation]="housingLocation"
+                ></app-housing-location>
