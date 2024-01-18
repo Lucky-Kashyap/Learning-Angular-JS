@@ -302,3 +302,11 @@
 - Take selector name from it & use it in app.component.html file
 
         <app-home></app-home>
+
+- Create More Components & use it
+
+        ng g c login
+
+        ng g c signup
+
+        ng g c about
