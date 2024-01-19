@@ -439,3 +439,20 @@
         }
 
 - Use services for better data handling
+
+### Add Routing
+
+- The Angular Router enables users to declare routes and specify which component should be displayed on the screen if that route is requested by the application.
+
+- Creates details Component
+
+        ng g c details
+
+- Create routes.ts file inside src/app
+
+- Inside main.ts
+
+- Import the routes file and the provideRouter function:
+
+                import { provideRouter } from '@angular/router';
+                import routeConfig from './app/routes';
