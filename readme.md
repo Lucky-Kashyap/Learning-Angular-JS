@@ -346,6 +346,32 @@
 
 - It Displays all Cards like list
 
+#### Learn how to integrate API
+
+- create an interface
+
+        export interface Comment {
+                postId: number;
+                id: number;
+                name: string;
+                email: string;
+                body: string;
+        }
+
+- create service
+
+        ng g s comment
+
+- import HttpClientModule in app.module.ts from @angular/common/http
+
+        import { HttpClientModule } from '@angular/common/http';
+
+- create comment-list component
+
+        ng generate component comment-list
+
+
+
 #### Create service
 
 - Add Static Data to the new service

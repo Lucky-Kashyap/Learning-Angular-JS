@@ -1,6 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+
+
+// @NgModule.schemas({
+//   'CUSTOM_ELEMENTS_SCHEMA':'app-comment-list'
+// })
+
 
 @Component({
   // standalone: true,

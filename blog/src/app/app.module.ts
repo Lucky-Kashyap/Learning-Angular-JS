@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { HousingLocationComponent } from './housing-location/housing-location.component';
 import { DetailsComponent } from './details/details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommentListComponent } from './comment-list/comment-list.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { DetailsComponent } from './details/details.component';
     AboutComponent,
     ServicesComponent,
     HousingLocationComponent,
+    CommentListComponent,
   ],
   imports: [BrowserModule, DetailsComponent],
   providers: [],
