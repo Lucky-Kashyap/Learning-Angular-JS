@@ -12,7 +12,16 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
 import { DetailsComponent } from './details/details.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LoginComponent, SignupComponent, AboutComponent, ServicesComponent, HousingLocationComponent, DetailsComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    SignupComponent,
+    AboutComponent,
+    ServicesComponent,
+    HousingLocationComponent,
+    DetailsComponent,
+  ],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],

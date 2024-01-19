@@ -6,9 +6,8 @@ import { HomeComponent } from './home/home.component';
   // standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
-  imports: [HomeComponent,RouterModule],
+  imports: [HomeComponent, RouterModule],
   styleUrls: ['./app.component.css'],
-
 })
 export class AppComponent {
   title = 'blog';

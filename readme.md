@@ -456,3 +456,13 @@
 
                 import { provideRouter } from '@angular/router';
                 import routeConfig from './app/routes';
+
+#### Routing in Angular JS Application
+
+- Creates new project
+
+        ng new angular-router-sample
+
+- creates component
+
+        ng generate component crisis-list
