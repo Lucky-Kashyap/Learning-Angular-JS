@@ -345,3 +345,13 @@
                 </app-housing-location>
 
 - It Displays all Cards like list
+
+#### Create service
+
+- Add Static Data to the new service
+
+        ng g service housing
+
+- Inject the new service into HomeComponent
+
+- In this, you added an Angular service to your app and injected it into the HomeComponent class.
