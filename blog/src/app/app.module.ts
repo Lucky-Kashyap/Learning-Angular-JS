@@ -25,4 +25,8 @@ import { DetailsComponent } from './details/details.component';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {
+    console.log('App Module constructore loaded...!!!');
+  }
+}

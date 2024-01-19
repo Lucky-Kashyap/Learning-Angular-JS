@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home.component';
   // standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
-  imports: [HomeComponent, RouterModule],
+  // imports: [HomeComponent, RouterModule],
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
@@ -19,4 +19,9 @@ export class AppComponent {
   };
   x = 20;
   y = 30;
+
+  constructor(){
+    console.log('App component constructor called...!!!');
+    
+  }
 }

@@ -475,6 +475,10 @@
 
 - The route /heroes-list opens the heroes-list component.
 
-
 - Create Page-Not-Found component
 
+### CRUD App : Registration Application
+
+- Create registration app
+
+        ng new registrationapp
