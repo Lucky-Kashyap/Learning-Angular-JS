@@ -463,6 +463,18 @@
 
         ng new angular-router-sample
 
-- creates component
+- creates components
 
         ng generate component crisis-list
+
+        ng generate component heroes-list
+
+#### Defines Routes
+
+- The route /crisis-center opens the crisis-center component.
+
+- The route /heroes-list opens the heroes-list component.
+
+
+- Create Page-Not-Found component
+

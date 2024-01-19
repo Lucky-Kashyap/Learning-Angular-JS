@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone:true,
   selector: 'app-crisis-list',
   templateUrl: './crisis-list.component.html',
   styleUrls: ['./crisis-list.component.css']

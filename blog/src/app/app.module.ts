@@ -13,16 +13,15 @@ import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    // AppComponent,
     HomeComponent,
     LoginComponent,
     SignupComponent,
     AboutComponent,
     ServicesComponent,
     HousingLocationComponent,
-    DetailsComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, DetailsComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
