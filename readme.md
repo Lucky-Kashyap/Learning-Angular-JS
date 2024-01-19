@@ -371,3 +371,71 @@
         </ul>
 
 - Define data in every component for using it
+
+- The DRY Principle and Focus Areas
+
+#### Creating the Service
+
+- To create a service in Angular, you need to run the generate service command:
+
+        ng generate service data
+
+- Two new files will be created. Navigate to the data service.ts file, and make sure the content is the same as this:
+
+        import { Injectable } from '@angular/core';
+                @Injectable({
+                providedIn: 'root'
+                })
+                export class DataService {
+                constructor() { }
+                getList(){
+                return[
+                {'grade':1, 'name':'Davido', 'country':'Nigeria'},
+                {'grade':2, 'name':'Burna Boy', 'country':'Nigeria'},
+                {'grade':3, 'name':'Diamondz Platinum', 'country':'Tanzania'},
+                {'grade':4, 'name':'Sarkodie', 'country':'Ghana'},
+                {'grade':5, 'name':'Mr. Eazi', 'country':'Nigeria'}
+                ];
+                }
+        }
+
+- This data service has now been created and hard-coded data stored in the getList function
+
+- Register a Service inside providers
+
+        @NgModule({
+                declarations: [
+                AppComponent,
+                ArtistsComponent,
+                ArtistnamesComponent
+                ],
+                imports: [
+                BrowserModule
+                ],
+                providers: [DataService],
+        bootstrap: [AppComponent]
+        })
+
+- Using the Services
+
+        export class ArtistsComponent implements OnInit {
+                public artists = []
+                constructor(private list: DataService) { }
+                ngOnInit(): void {
+                this.artists = this.list.getList();
+                }
+        }
+
+- You can see how this is done and now we have access to the functions declared inside of the service we created
+
+- In Both component we use this service
+
+        export class ArtistnameComponent implements OnInit {
+                public artists = [];
+                constructor(private list: DataService) {}
+                ngOnInit(): void {
+                this.artists = this.list.getList();
+                }
+        }
+
+- Use services for better data handling
