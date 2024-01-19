@@ -482,3 +482,19 @@
 - Create registration app
 
         ng new registrationapp
+
+- Use Bootstrap library for UI creation
+
+        npm i bootstrap
+
+- Include boostrap file in style.css not in angular.json
+
+- If we put bootstrap inside angular.json file we need to explicitly re run the application (basically angular.json compiles only one time when it serve using ng serve)
+
+- We incldue it in style.css file
+
+        @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+- Use boostrap in UI
+
+        <button class='btn btn-success'>Success </button>
