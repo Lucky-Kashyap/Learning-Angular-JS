@@ -59,5 +59,7 @@ header {
   padding: var(--content-padding);
 }
 .image{
-  width: 4%;
+  width: 6%;
+  border-radius: 1vw;
+  cursor: pointer;
 }
