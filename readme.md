@@ -355,3 +355,9 @@
 - Inject the new service into HomeComponent
 
 - In this, you added an Angular service to your app and injected it into the HomeComponent class.
+
+### Create new Angular JS Project : serviceapp
+
+- For Understanding services in Angular JS
+
+- How to use services for better data handling inside application
