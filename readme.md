@@ -361,3 +361,13 @@
 - For Understanding services in Angular JS
 
 - How to use services for better data handling inside application
+
+- In different-different component we use static data in there .ts file & loop through it using \*ngFor loop
+
+        <ul *ngFor="let artist of artists">
+                <li>
+                        {{artist.name}} who is currently number {{artist.grade}}
+                </li>
+        </ul>
+
+- Define data in every component for using it

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-artists',
-  templateUrl: './artists.component.html',
-  styleUrls: ['./artists.component.css'],
+  selector: 'app-artistnames',
+  templateUrl: './artistnames.component.html',
+  styleUrls: ['./artistnames.component.css'],
 })
-export class ArtistsComponent implements OnInit {
+export class ArtistnamesComponent implements OnInit {
   public artists = [
     { grade: 1, name: 'Davido', country: 'Nigeria' },
     { grade: 2, name: 'Burna Boy', country: 'Nigeria' },
@@ -13,9 +13,7 @@ export class ArtistsComponent implements OnInit {
     { grade: 4, name: 'Sarkodie', country: 'Ghana' },
     { grade: 5, name: 'Mr. Eazi', country: 'Nigeria' },
   ];
+  constructor() {}
 
-
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void {}
 }
