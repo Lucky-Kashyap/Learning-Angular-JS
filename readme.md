@@ -370,8 +370,6 @@
 
         ng generate component comment-list
 
-
-
 #### Create service
 
 - Add Static Data to the new service
@@ -521,6 +519,12 @@
 
         @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-- Use boostrap in UI
+- Use bootstrap in UI
 
         <button class='btn btn-success'>Success </button>
+
+### Create new Angular App
+
+- Use routing in this app
+
+        ng new angular-app
