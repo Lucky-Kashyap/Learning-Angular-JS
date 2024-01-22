@@ -1,14 +1,14 @@
-<!-- <h3>Interpolation: {{ headerName }}</h3>
+<h3>Interpolation: {{ headerName }}</h3>
 <h3>Pipe: {{ headerName | lowercase }}</h3>
-<h3>Pipe: {{ headerName | uppercase }}</h3>
-
+<!-- <h3>Pipe: {{ headerName | uppercase }}</h3> -->
+<!-- 
 <h4>Salary: {{salary}}</h4>
 <h4>Salary: {{salary | currency}}</h4>
 <h4>Salary: {{salary | currency:'INR'}}</h4>
 
 <h4>Salary: {{salary | currency:'EUR'}}</h4>
 <h4>Salary: {{salary | currency:'USD'}}</h4>
-<h4>Salary: {{salary | percent}}</h4> -->
+<h4>Salary: {{salary | percent}}</h4>  -->
 
 <h5>Angular JS</h5>
 
@@ -23,6 +23,9 @@
   #txt
   (change)="Functionclick(txt.value)"
 />
+<br> <br>
+<input type="text" [(ngModel)]="headerName">
+
 
 <!-- <input  (change)="Functionclick('text value')" /> <br> <br>
 <input #txt (change)="Functionclick(txt.value)" /> -->

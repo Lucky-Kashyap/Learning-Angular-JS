@@ -683,6 +683,11 @@
         (change)="Functionclick(txt.value)"
         />
 
-- Two Way binding - []
+- Two Way binding - [()]
+
+  - import FormsModule in app.module.ts file
+  - use ngModel & property name
+
+             <input type="text" [(ngModel)]="headerName">
 
 - Style Binding
