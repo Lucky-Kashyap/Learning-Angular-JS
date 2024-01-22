@@ -580,3 +580,27 @@
                 AppRoutingModule,
                 LoginComponent
         ],
+
+- Creating model
+
+        ng g m Access --routing
+
+- create component inside model
+
+        ng g c access/Register
+
+### Routing
+
+- Basic Routing
+
+        - Routes - this is the place for mapping path & component
+
+        - routerLink - this is direction for navigate different routes
+
+        - router-outlet - this is place for display the matched route
+
+- Child routing (Group Routing)
+- Module Routing
+- Lazy Loading
+- Redirect 404 page if route not found
+- Get Route Values
