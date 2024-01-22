@@ -724,4 +724,14 @@
 
 - Structural Directive
 
-        - nglf , ngFor, ngSwitch
+        - ngIf , ngFor, ngSwitch
+
+        - ngIf : based on some condition it shows the particular element
+
+                <h4 *ngIf="salary>2000">Salary: {{salary}}</h4>
+
+        - ngFor : Loop over data
+
+                        <ul>
+                                <li *ngFor="let item of colors">{{item}}</li>
+                        </ul>

@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   headerName = 'Angular Tutorial';
-  salary = 10000;
+  salary = 1000;
 
   colorName = 'red';
   size = '2vw';
@@ -24,6 +24,8 @@ export class HomeComponent implements OnInit {
     color: 'yellow',
     fontSize: '5vw',
   };
+
+  colors = ['green', 'red', 'yellow', 'black'];
 
   ngOnInit(): void {}
 

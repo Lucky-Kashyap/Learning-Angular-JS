@@ -35,7 +35,18 @@
 
 <!-- <h3 [ngClass]="className">My Salary is {{salary | percent}}</h3> -->
 
-<h3 [ngStyle]="styleVal">My Salary is {{ salary | percent }}</h3>
+<!-- <h3 [ngStyle]="styleVal">My Salary is {{ salary | percent }}</h3> -->
+
+<h4 *ngIf="salary>2000">Salary: {{salary}}</h4>
+
+
 
 <!-- <input  (change)="Functionclick('text value')" /> <br> <br>
 <input #txt (change)="Functionclick(txt.value)" /> -->
+
+
+<!-- Loop -->
+
+<ul>
+    <li *ngFor="let item of colors">{{item}}</li>
+</ul>
