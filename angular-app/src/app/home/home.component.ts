@@ -11,13 +11,15 @@ export class HomeComponent implements OnInit {
   headerName = 'Angular Tutorial';
   salary = 10000;
 
+  // isDisabled=true;
+
+  isDisabled = false;
+
   ngOnInit(): void {}
 
-  Functionclick(name:string){
+  Functionclick(name: string) {
     // console.log('Click Event');
 
     console.log(name);
-    
-    
   }
 }

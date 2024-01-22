@@ -13,6 +13,16 @@
 <h5>Angular JS</h5>
 
 <button (click)="Functionclick('click here')">Click Me</button>
-<br /> <br>
-<input  (change)="Functionclick('text value')" /> <br> <br>
-<input #txt (change)="Functionclick(txt.value)" />
+<br />
+<br />
+
+<input
+  type="text"
+  [value]="isDisabled"
+  [disabled]="isDisabled"
+  #txt
+  (change)="Functionclick(txt.value)"
+/>
+
+<!-- <input  (change)="Functionclick('text value')" /> <br> <br>
+<input #txt (change)="Functionclick(txt.value)" /> -->

@@ -675,6 +675,14 @@
 
 - Property Binding - []
 
+        <input
+        type="text"
+        [value]="isDisabled"
+        [disabled]="isDisabled"
+        #txt
+        (change)="Functionclick(txt.value)"
+        />
+
 - Two Way binding - []
 
 - Style Binding
