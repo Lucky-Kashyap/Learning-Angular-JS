@@ -699,3 +699,29 @@
               size='2vw';
 
               <p [style.font-size]="size">Style Binding</p>
+
+### Directives
+
+- Components
+
+- Attribute Directives
+
+        1. ngClass
+        2. ngStyle
+        3. ngModel
+
+
+        className = 'headclass';
+
+        styleVal = {
+                color: 'yellow',
+                fontSize: '5vw',
+        };
+
+        <h3 [ngClass]="className">My Salary is {{salary | percent}}</h3>
+
+        <h3 [ngStyle]="styleVal">My Salary is {{ salary | percent }}</h3>
+
+- Structural Directive
+
+        - nglf , ngFor, ngSwitch

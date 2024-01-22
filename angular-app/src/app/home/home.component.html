@@ -24,9 +24,18 @@
   #txt
   (change)="Functionclick(txt.value)"
 />
-<br> <br>
-<input type="text" [(ngModel)]="headerName">
+<br />
+<br />
+<input type="text" [(ngModel)]="headerName" />
 
+<br />
+<br />
+
+<p>Directives</p>
+
+<!-- <h3 [ngClass]="className">My Salary is {{salary | percent}}</h3> -->
+
+<h3 [ngStyle]="styleVal">My Salary is {{ salary | percent }}</h3>
 
 <!-- <input  (change)="Functionclick('text value')" /> <br> <br>
 <input #txt (change)="Functionclick(txt.value)" /> -->

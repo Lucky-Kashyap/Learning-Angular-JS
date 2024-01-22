@@ -12,11 +12,18 @@ export class HomeComponent implements OnInit {
   salary = 10000;
 
   colorName = 'red';
-  size='2vw';
+  size = '2vw';
 
   // isDisabled=true;
 
   isDisabled = false;
+
+  className = 'headclass';
+
+  styleVal = {
+    color: 'yellow',
+    fontSize: '5vw',
+  };
 
   ngOnInit(): void {}
 
