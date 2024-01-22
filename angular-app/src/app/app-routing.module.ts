@@ -28,6 +28,11 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'access',
+    loadChildren: () =>
+      import('./access/access.module').then((opt) => opt.AccessModule),
+  },
 ];
 
 @NgModule({

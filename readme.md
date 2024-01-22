@@ -609,6 +609,13 @@
         - Include this model (routing file) inside app.module.ts file
 
 - Lazy Loading
+
+        {
+                path: 'access',
+                loadChildren: () =>
+                import('./access/access.module').then((opt) => opt.AccessModule),
+        },
+
 - Redirect 404 page if route not found
 - Get Route Values
 
