@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AddcontactComponent } from './addcontact/addcontact.component';
+import { StatusComponent } from './status/status.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,15 @@ const routes: Routes = [
     path: 'access',
     loadChildren: () =>
       import('./access/access.module').then((opt) => opt.AccessModule),
+  },
+  {
+    path: 'login',
+    loadComponent: () =>
+      import('./login/login.component').then((opt) => opt.LoginComponent),
+  },
+  {
+    path: '**',
+    component: StatusComponent,
   },
 ];
 

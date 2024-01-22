@@ -616,7 +616,17 @@
                 import('./access/access.module').then((opt) => opt.AccessModule),
         },
 
+        {
+        path:'login',loadComponent:()=>import('./login/login.component').then((opt)=>opt.LoginComponent),
+        }
+
 - Redirect 404 page if route not found
+
+        {
+                path: '**',
+                component: StatusComponent,
+        },
+
 - Get Route Values
 
           constructor(private route: ActivatedRoute) {}

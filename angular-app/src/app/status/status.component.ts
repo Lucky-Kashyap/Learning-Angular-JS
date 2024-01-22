@@ -2,20 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-status',
-  template: `
-    <p>
-      status works!
-    </p>
-  `,
-  styles: [
-    "p{color:green;font-size:2vw}"
-  ]
+  template: ` <h2>404 Error. Requested page not Found..!!</h2> `,
+  styles: ['h2{color:red;font-size:4vw}'],
 })
 export class StatusComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
