@@ -528,3 +528,27 @@
 - Use routing in this app
 
         ng new angular-app
+
+- Create Home component
+
+        ng g c Home
+
+- It will create the four files
+
+#### Components
+
+- Basic Components:
+
+        ng g c name
+
+- Components Inline style:
+
+        ng g c name --inline-style
+
+- Components Inline Template:
+
+        ng g c name --inline-template
+
+- Stand Alone Component:
+
+        ng g c name -standalone
