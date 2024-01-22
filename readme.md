@@ -639,3 +639,30 @@
 
 
         }
+
+### Bindings
+
+- Interpolation (data binding) - {{}}
+
+       <h3>Interpolation: {{ headerName }}</h3>
+        <h3>Pipe: {{ headerName | lowercase }}</h3>
+        <h3>Pipe: {{ headerName | uppercase }}</h3>
+
+  - pipe : one type to another (transfering text to some other text)
+  - Transforming data Using Pipes
+
+        <h4>Salary: {{salary}}</h4>
+        <h4>Salary: {{salary | currency}}</h4>
+        <h4>Salary: {{salary | currency:'INR'}}</h4>
+
+        <h4>Salary: {{salary | currency:'EUR'}}</h4>
+        <h4>Salary: {{salary | currency:'USD'}}</h4>
+        <h4>Salary: {{salary | percent}}</h4>
+
+- Event Binding - ()
+
+- Property Binding - []
+
+- Two Way binding - []
+
+- Style Binding
