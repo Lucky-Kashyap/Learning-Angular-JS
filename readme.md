@@ -601,6 +601,13 @@
 
 - Child routing (Group Routing)
 - Module Routing
+
+        - In model creates routing paths and in app.component.html use it
+
+                <a routerLink="register">Register</a>
+
+        - Include this model (routing file) inside app.module.ts file
+
 - Lazy Loading
 - Redirect 404 page if route not found
 - Get Route Values
