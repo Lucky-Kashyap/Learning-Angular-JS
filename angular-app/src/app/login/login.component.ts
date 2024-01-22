@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/Material-Module';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { UserService } from '../Service/user.service';
 
 @Component({
   selector: 'app-login',
@@ -12,16 +13,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  constructor(private route:Router) {}
+  constructor(private route: Router, private service: UserService) {}
 
   ngOnInit(): void {}
 
-  RedirectRegister(){
+  RedirectRegister() {
     this.route.navigate(['access/register']);
   }
 
-  ProceedLogin(logindata:any){
-    console.log(logindata);
-    
+  ProceedLogin(logindata: any) {
+    // console.log(logindata);
+
+    // console.log(logindata.valid);
+    console.log(logindata.value);
+
+    // logindata = {};
   }
 }
