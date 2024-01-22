@@ -604,3 +604,14 @@
 - Lazy Loading
 - Redirect 404 page if route not found
 - Get Route Values
+
+          constructor(private route: ActivatedRoute) {}
+
+                ngOnInit(): void {
+                const routeid = this.route.snapshot.paramMap.get('id');
+
+                console.log(routeid);
+
+
+
+        }
