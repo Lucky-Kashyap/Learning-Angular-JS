@@ -552,3 +552,17 @@
 - Stand Alone Component:
 
         ng g c name -standalone
+
+- Style component Inline
+
+        @Component({
+                selector: 'app-status',
+                template: `
+                <p>
+                status works!
+                </p>
+                `,
+                styles: [
+                "p{color:green;font-size:2vw}"
+                ]
+        })
