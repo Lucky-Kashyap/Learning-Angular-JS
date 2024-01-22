@@ -661,6 +661,18 @@
 
 - Event Binding - ()
 
+        <button (click)="Functionclick('click here')">Click Me</button>
+
+        <input  (change)="Functionclick('text value')" />
+        <input #txt (change)="Functionclick(txt.value)" />
+
+         Functionclick(name:string){
+                // console.log('Click Event');
+
+             console.log(name);
+
+        }
+
 - Property Binding - []
 
 - Two Way binding - []

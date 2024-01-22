@@ -12,4 +12,12 @@ export class HomeComponent implements OnInit {
   salary = 10000;
 
   ngOnInit(): void {}
+
+  Functionclick(name:string){
+    // console.log('Click Event');
+
+    console.log(name);
+    
+    
+  }
 }
