@@ -566,3 +566,17 @@
                 "p{color:green;font-size:2vw}"
                 ]
         })
+
+- Use standalone component
+
+        ng g c login --standalone
+
+- It will create the component & that component doesn't belong to any specific Angular Module.
+
+- For using it, we have to import it in the app.module.ts file
+
+         imports: [
+                BrowserModule,
+                AppRoutingModule,
+                LoginComponent
+        ],
