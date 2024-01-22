@@ -71,17 +71,17 @@
 
 <h2>Login Form</h2>
 
-<form method="post">
+<form #loginform="ngForm" (submit)="ProceedLogin(loginform.value)" method="post">
   <div class="imgcontainer">
     <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" ngModel name="uname" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password"  ngModel placeholder="Enter Password" name="psw" required>
         
     <button type="submit">Login</button>
     <button type="submit" class="register"  (click)="RedirectRegister()">Register</button>

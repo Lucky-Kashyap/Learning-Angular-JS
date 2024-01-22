@@ -754,3 +754,6 @@
         RedirectRegister(){
         this.route.navigate(['access/register']);
         }
+
+- Build Login Functionality
+

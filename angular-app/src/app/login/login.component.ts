@@ -19,4 +19,9 @@ export class LoginComponent implements OnInit {
   RedirectRegister(){
     this.route.navigate(['access/register']);
   }
+
+  ProceedLogin(logindata:any){
+    console.log(logindata);
+    
+  }
 }
