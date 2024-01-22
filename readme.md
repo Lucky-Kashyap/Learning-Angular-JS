@@ -745,3 +745,12 @@
         nm i alertify --save
 
 - Build UI Screen of Login
+
+
+        constructor(private route:Router) {}
+
+        ngOnInit(): void {}
+
+        RedirectRegister(){
+        this.route.navigate(['access/register']);
+        }
