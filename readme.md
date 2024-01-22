@@ -691,3 +691,11 @@
              <input type="text" [(ngModel)]="headerName">
 
 - Style Binding
+
+  - define property
+
+              colorName='red';
+
+              size='2vw';
+
+              <p [style.font-size]="size">Style Binding</p>

@@ -1,5 +1,5 @@
 <h3>Interpolation: {{ headerName }}</h3>
-<h3>Pipe: {{ headerName | lowercase }}</h3>
+<h3 [style.color]="colorName">Pipe: {{ headerName | lowercase }}</h3>
 <!-- <h3>Pipe: {{ headerName | uppercase }}</h3> -->
 <!-- 
 <h4>Salary: {{salary}}</h4>
@@ -15,6 +15,7 @@
 <button (click)="Functionclick('click here')">Click Me</button>
 <br />
 <br />
+<p [style.font-size]="size">Style Binding</p>
 
 <input
   type="text"

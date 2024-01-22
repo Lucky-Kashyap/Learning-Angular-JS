@@ -11,6 +11,9 @@ export class HomeComponent implements OnInit {
   headerName = 'Angular Tutorial';
   salary = 10000;
 
+  colorName = 'red';
+  size='2vw';
+
   // isDisabled=true;
 
   isDisabled = false;
