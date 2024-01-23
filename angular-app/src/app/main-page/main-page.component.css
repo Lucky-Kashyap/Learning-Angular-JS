@@ -6,6 +6,10 @@
     align-items: center;
     gap: 1vw;
 }
+.category{
+    font-size: 1.3vw;
+    color: rgb(17, 168, 148);
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;

@@ -1,13 +1,12 @@
 <div class="products">
-  <div class="card" *ngFor="let item of locations">
-    <img src="{{ item.photo }}" alt="Denim Jeans" />
-    <h1>{{ item.name }}</h1>
-    <p class="price">{{ item.city }}</p>
+  <div class="card" *ngFor="let item of products">
+    <img src="{{ item.image }}" alt="Denim Jeans" />
+    <h1>{{ item.title }}</h1>
+    <p class="price">{{ item.price }}</p>
     <p>
-      Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
-      Lorem jeamsun denim lorem jeansum.
+    {{item.description}}
     </p>
-    <p><button>Add to Cart</button></p>
+    <h3 class="category">Category: {{item.category}}<button>Add to Cart</button></h3>
   </div>
 </div>
 <!-- <div class="card">

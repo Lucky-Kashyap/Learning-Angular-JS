@@ -767,3 +767,65 @@
 - Create Register page & get form input values
 
 - Use Array of Objects for data & use them in main component
+
+### Calling API
+
+- create service for api
+
+        ng g s api
+
+- Open the src/app/app.module.ts file then import HttpClientModule and add it to the imports array:
+
+        import { HttpClientModule } from '@angular/common/http';
+
+        @NgModule({
+        declarations: [AppComponent],
+        entryComponents: [],
+        imports: [
+        // [...]
+        HttpClientModule,
+        ],
+        // [...]
+        })
+        export class AppModule {}
+
+- Injecting HttpClient in The Angular 14 Service,
+  Open the src/app/api.service.ts file and inject HttpClient via the service constructor:
+
+          import { Injectable } from '@angular/core';
+          import { HttpClient } from '@angular/common/http';
+
+          @Injectable({
+          providedIn: 'root'
+          })
+          export class ApiService {
+
+          constructor(private httpClient: HttpClient) { }
+          }
+
+- Sending GET Request for Fetching Data, define an API_KEY variable which will hold your API key from the Products API:
+
+        export class ApiService {
+
+        public getProducts(){
+        return this.httpClient.get('https://fakestoreapi.com/products');
+        }
+
+        constructor(private httpClient:HttpClient) { }
+        }
+
+- Call API in main component
+
+        products:any;
+
+        constructor(private apiService:ApiService) { }
+
+        ngOnInit(): void {
+
+        this.apiService.getProducts().subscribe((data)=>{
+        console.log(data);
+        this.products= data;
+
+        })
+
+- Use Api Data in component using \*ngFor {{}}
