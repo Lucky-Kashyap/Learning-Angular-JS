@@ -763,3 +763,5 @@
 - Create '/' path to load when app loaded
 
 - Generate Basic Cards in Main Page Component
+
+- Create Register page & get form input values
