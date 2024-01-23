@@ -761,3 +761,5 @@
         ng g c main-page
 
 - Create '/' path to load when app loaded
+
+- Generate Basic Cards in Main Page Component
