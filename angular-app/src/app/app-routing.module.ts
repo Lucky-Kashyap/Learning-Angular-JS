@@ -5,8 +5,13 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AddcontactComponent } from './addcontact/addcontact.component';
 import { StatusComponent } from './status/status.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: MainPageComponent,
+  },
   {
     path: 'home',
     component: HomeComponent,

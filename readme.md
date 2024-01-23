@@ -746,7 +746,6 @@
 
 - Build UI Screen of Login
 
-
         constructor(private route:Router) {}
 
         ngOnInit(): void {}
@@ -757,3 +756,8 @@
 
 - Build Login Functionality
 
+### Create Default MainPage Component
+
+        ng g c main-page
+
+- Create '/' path to load when app loaded
