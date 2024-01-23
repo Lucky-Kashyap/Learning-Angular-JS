@@ -768,7 +768,7 @@
 
 - Use Array of Objects for data & use them in main component
 
-### Calling API
+### Calling API [[https://www.techiediaries.com/angular-14-get-rest-api/]]
 
 - create service for api
 
