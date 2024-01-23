@@ -765,3 +765,5 @@
 - Generate Basic Cards in Main Page Component
 
 - Create Register page & get form input values
+
+- Use Array of Objects for data & use them in main component
