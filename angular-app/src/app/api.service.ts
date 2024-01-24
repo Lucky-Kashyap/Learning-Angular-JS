@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
+  
 
   public getProducts(){
     return this.httpClient.get('https://fakestoreapi.com/products');
