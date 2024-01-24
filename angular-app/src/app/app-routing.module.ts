@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AddcontactComponent } from './addcontact/addcontact.component';
 import { StatusComponent } from './status/status.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
         component: AddcontactComponent,
       },
     ],
+  },
+  {
+    path:'products',
+    component:ProductsComponent,
   },
   {
     path: 'access',

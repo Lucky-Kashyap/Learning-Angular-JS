@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MainPageComponent } from './main-page/main-page.component';
+import { ProductsComponent } from './products/products.component';
 // import { AccessRoutingModule } from './access/access-routing.module';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { MainPageComponent } from './main-page/main-page.component';
     StatusComponent,
     AddcontactComponent,
     MainPageComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,

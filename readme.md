@@ -829,3 +829,9 @@
         })
 
 - Use Api Data in component using \*ngFor {{}}
+
+#### Create Products section
+
+- Use API to get Products Data
+
+- Implement Products Detail also
