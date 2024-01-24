@@ -11,28 +11,33 @@ export class ProductsdetailComponent implements OnInit {
 
   productsId=-1;
 
-  products :ApiService|undefined;
-  
+ 
+  products:any;
 
   constructor(private route:ActivatedRoute,private apiService:ApiService) { }
 
   ngOnInit(): void {
     this.productsId=Number(this.route.snapshot.paramMap.get('id'));
 
-    this.apiService.getData(this.productsId).then(data=>{
-      // console.log(data);
-      
-      this.products=data;
+    this.apiService.getProductsById(this.productsId).subscribe((res) => {
+      console.log(res);
+      this.products = res;
+    });
 
-      let {title,price,description,category,image,rating}= data;
+    // this.apiService.getData(this.productsId).then(data=>{
+    //   // console.log(data);
+      
+    //   this.products=data;
 
-      console.log(title);
-      console.log(price);
+    //   let {title,price,description,category,image,rating}= data;
+
+    //   console.log(title);
+    //   console.log(price);
       
 
-      console.log(this.products);
+    //   console.log(this.products);
       
-    })
+    // })
   }
 
 }

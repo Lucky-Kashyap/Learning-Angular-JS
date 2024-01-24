@@ -847,3 +847,14 @@
 
 
         }
+
+- GET API call
+
+        this.apiService.getProductsById(this.productsId).subscribe((res) => {
+        console.log(res);
+        this.products = res;
+        });
+
+        public getProductsById(id:number){
+        return this.httpClient.get(`https://fakestoreapi.com/products/${id}`);
+        }

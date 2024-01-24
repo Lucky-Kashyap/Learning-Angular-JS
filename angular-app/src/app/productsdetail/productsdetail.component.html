@@ -1,8 +1,14 @@
-<p>productsdetail works!</p>
-
 <div class="product">
-  <h3>{{ productsId }}</h3>
-  <!-- <p>{{title}}</p> -->
-
-  <p></p>
+  <div class="image">
+    <img src="{{products.image}}" alt="" />
+  </div>
+  <div class="side">
+    <h2>{{products.title}}</h2>
+    <p>{{products.description}}</p>
+    <h5>{{products.category}}</h5>
+    <div class="rating">
+      <span>${{products.price}}</span>
+    </div>
+    <button>Add To Cart</button>
+  </div>
 </div>

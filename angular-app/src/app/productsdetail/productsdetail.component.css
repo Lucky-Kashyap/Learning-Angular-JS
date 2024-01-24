@@ -1,0 +1,43 @@
+.product{
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product .image{
+    width: 20%;
+}
+.product img{
+    width: 100%;
+}
+.product .side{
+    width: 60%;
+}
+.product .side h2{
+    font-size: 3vw;
+    margin-top: 2vw;
+    line-height: 3.4vw;
+}
+.product .side p{
+    margin-top: 1vw;
+    font-size: 1.4vw;
+}
+.product .side h5{
+    margin: 2vw 0;
+    font-size: 1.4vw;
+
+}
+button{
+    margin-top: 2vw;
+    color: aliceblue;
+    background-color: #5ab36d;
+    padding: .5vw 2vw;
+    border-radius: .3vw;
+    font-size: 1.1vw;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.rating span{
+    margin-top: 2vw;
+    font-size: 2vw;
+}

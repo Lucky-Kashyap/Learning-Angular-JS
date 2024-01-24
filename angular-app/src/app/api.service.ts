@@ -7,25 +7,25 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
 
-  title='';
-  price=0;
-  description='';
-  category='';
-  image='';
-  rating=0;
+  
 
   public getProducts(){
     return this.httpClient.get('https://fakestoreapi.com/products');
   }
 
-  async getData(id:number){
-    const data = await fetch(`https://fakestoreapi.com/products/${id}`);
-    const res = await data.json();
 
-    let {title,price,description,category,image,rating}= res;
-
-    return res;
+  public getProductsById(id:number){
+    return this.httpClient.get(`https://fakestoreapi.com/products/${id}`);
   }
+  
+  // async getData(id:number){
+  //   const data = await fetch(`https://fakestoreapi.com/products/${id}`);
+  //   const res = await data.json();
+
+  //   let {title,price,description,category,image,rating}= res;
+
+  //   return res;
+  // }
 
   constructor(private httpClient:HttpClient) { }
 }
