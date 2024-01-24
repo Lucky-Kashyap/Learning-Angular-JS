@@ -876,7 +876,8 @@
 
   #### Home Page :
 
-  ![Screenshot (23)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/7bc00f6b-3ef2-45b6-9574-1b30919721e3)
+ ![Screenshot (22)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/89dcd846-0b05-4174-bb18-fcd8cf083bbf)
+
 
   #### Products Section :
 
