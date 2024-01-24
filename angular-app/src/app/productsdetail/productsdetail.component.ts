@@ -1,23 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-productsdetail',
   templateUrl: './productsdetail.component.html',
-  styleUrls: ['./productsdetail.component.css']
+  styleUrls: ['./productsdetail.component.css'],
 })
 export class ProductsdetailComponent implements OnInit {
+  productsId = -1;
 
-  productsId=-1;
+  products: any;
 
- 
-  products:any;
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private apiService: ApiService
+  ) {}
 
-  constructor(private route:ActivatedRoute,private apiService:ApiService) { }
-
+  goBack() {
+    this.router.navigate(['/products']);
+  }
   ngOnInit(): void {
-    this.productsId=Number(this.route.snapshot.paramMap.get('id'));
+    this.productsId = Number(this.route.snapshot.paramMap.get('id'));
 
     this.apiService.getProductsById(this.productsId).subscribe((res) => {
       console.log(res);
@@ -26,18 +31,16 @@ export class ProductsdetailComponent implements OnInit {
 
     // this.apiService.getData(this.productsId).then(data=>{
     //   // console.log(data);
-      
+
     //   this.products=data;
 
     //   let {title,price,description,category,image,rating}= data;
 
     //   console.log(title);
     //   console.log(price);
-      
 
     //   console.log(this.products);
-      
+
     // })
   }
-
 }

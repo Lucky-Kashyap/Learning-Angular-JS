@@ -858,3 +858,9 @@
         public getProductsById(id:number){
         return this.httpClient.get(`https://fakestoreapi.com/products/${id}`);
         }
+
+- Navigate to Products section via navigate
+
+         goBack() {
+                this.router.navigate(['/products']);
+        }
