@@ -7,6 +7,7 @@ import { AddcontactComponent } from './addcontact/addcontact.component';
 import { StatusComponent } from './status/status.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ProductsComponent } from './products/products.component';
+import { ProductsdetailComponent } from './productsdetail/productsdetail.component';
 
 const routes: Routes = [
   {
@@ -36,9 +37,15 @@ const routes: Routes = [
     ],
   },
   {
-    path:'products',
-    component:ProductsComponent,
+    path: 'products',
+    component: ProductsComponent,
+    
   },
+  {
+    path: 'product/:id',
+    component: ProductsdetailComponent,
+  },
+
   {
     path: 'access',
     loadChildren: () =>

@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ProductsComponent } from './products/products.component';
+import { ProductsdetailComponent } from './productsdetail/productsdetail.component';
 // import { AccessRoutingModule } from './access/access-routing.module';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { ProductsComponent } from './products/products.component';
     AddcontactComponent,
     MainPageComponent,
     ProductsComponent,
+    ProductsdetailComponent,
   ],
   imports: [
     BrowserModule,

@@ -835,3 +835,15 @@
 - Use API to get Products Data
 
 - Implement Products Detail also
+
+- Get URL Params id
+
+        productsId=-1;
+
+        constructor(private route:ActivatedRoute) { }
+
+        ngOnInit(): void {
+                this.productsId=Number(this.route.snapshot.paramMap.get('id'));
+
+
+        }
