@@ -864,3 +864,33 @@
          goBack() {
                 this.router.navigate(['/products']);
         }
+
+### ECommerce Project (Mini Version)
+
+- Home Page All Products Listed in Cards
+- Beutiful Navigation to perform routing
+- Products section
+- Login Page
+- Register Page
+- Product Details Page
+
+  #### Home Page :
+
+  ![Screenshot (23)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/7bc00f6b-3ef2-45b6-9574-1b30919721e3)
+
+  #### Products Section :
+
+  ![Screenshot (22)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/647b3b0e-e8ad-4254-86ba-4b769458d395)
+
+  #### Product Details Page :
+
+  ![Screenshot (26)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/2965861e-5890-43e6-a100-0eb4e6c09be3)
+
+  #### Login Page :
+
+  ![Screenshot (24)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/56111945-4380-430c-836e-98b0ee01398b)
+
+  #### Register Page :
+
+  ![Screenshot (25)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/b3ae4a8c-ff18-43d1-966e-2cb67d178aca)
+
