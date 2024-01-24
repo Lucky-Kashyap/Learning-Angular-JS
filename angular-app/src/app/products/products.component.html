@@ -1,13 +1,12 @@
 <div class="products">
     <div class="card" *ngFor="let item of product">
-      
+        <a [routerLink]="['/product',item.id]">
       <img src="{{ item.image }}" alt="Denim Jeans" />
       <h1>{{ item.title }}</h1>
       <p class="price">{{ item.price }}</p>
     
       <!-- <h3 class="category">Category: {{item.category}}</h3> -->
 
-      <button>Add to Cart</button>
-    <a [routerLink]="['/product',item.id]">Learn More</a>
+      <button>Add to Cart</button></a>
     </div>
   </div>

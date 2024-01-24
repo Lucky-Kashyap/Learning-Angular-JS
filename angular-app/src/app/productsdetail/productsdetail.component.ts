@@ -11,15 +11,28 @@ export class ProductsdetailComponent implements OnInit {
 
   productsId=-1;
 
-  // products:products|undefined;
+  products :ApiService|undefined;
   
 
-  constructor(private route:ActivatedRoute) { }
+  constructor(private route:ActivatedRoute,private apiService:ApiService) { }
 
   ngOnInit(): void {
     this.productsId=Number(this.route.snapshot.paramMap.get('id'));
 
-    
+    this.apiService.getData(this.productsId).then(data=>{
+      // console.log(data);
+      
+      this.products=data;
+
+      let {title,price,description,category,image,rating}= data;
+
+      console.log(title);
+      console.log(price);
+      
+
+      console.log(this.products);
+      
+    })
   }
 
 }
