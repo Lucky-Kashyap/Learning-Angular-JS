@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartserviceService } from '../cartservice.service';
+import { ReadMoreOptions } from '@minni/read-more';
 
 @Component({
   selector: 'app-cart',
@@ -9,6 +10,15 @@ import { CartserviceService } from '../cartservice.service';
 export class CartComponent implements OnInit {
   public products:any=[];
   public grandTotal !:number;
+
+  readMoreOption:ReadMoreOptions={
+    readLessText:'Read Less',
+    readMoreText:'Read More',
+    styles:{
+      color:'#666'
+    },
+    classes:['read-more']
+  }
   
 
   constructor(private cartService:CartserviceService) { }

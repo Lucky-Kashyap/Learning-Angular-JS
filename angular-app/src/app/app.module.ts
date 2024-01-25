@@ -15,6 +15,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductsdetailComponent } from './productsdetail/productsdetail.component';
 import { CartComponent } from './cart/cart.component';
+import { NgxsReadMoreModule } from '@minni/read-more';
 // import { AccessRoutingModule } from './access/access-routing.module';
 
 @NgModule({
@@ -37,6 +38,7 @@ import { CartComponent } from './cart/cart.component';
     BrowserAnimationsModule,
     HttpClientModule,
     // AccessRoutingModule
+    NgxsReadMoreModule
   ],
   providers: [],
   bootstrap: [AppComponent],

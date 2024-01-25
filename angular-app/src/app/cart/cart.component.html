@@ -27,10 +27,10 @@
                   alt="product"
                 />
               </td>
-              <td style="width: 25%">{{ item.description }}</td>
-              <th style="width: 12%">{{ item.price }}</th>
+              <td style="width: 25%" readMore="3" [readMoreOptions]="readMoreOption">{{ item.description }}</td>
+              <th style="width: 12%">₹{{ item.price }}</th>
               <td style="width: 12%">1</td>
-              <td style="width: 12%">{{ item.price }}</td>
+              <td style="width: 12%">₹{{ item.price }}</td>
               <td>
                 <button class="btn btn-danger">
                   <i class="fas fa-trash-alt"></i>
@@ -46,7 +46,7 @@
                 </button>
               </td>
               <td><button class="btn btn-success">Checkout</button></td>
-              <td><strong>Grand Total : ${{grandTotal}}</strong></td>
+              <td><strong>Grand Total : ₹{{grandTotal}}</strong></td>
             </tr>
           </tbody>
         </table>
