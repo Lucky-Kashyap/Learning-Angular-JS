@@ -899,4 +899,16 @@
 - Create cart component and add route to it
 
         ng g c cart
+#### ADD To Cart Page :
+
+![Screenshot (28)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/e9e0e5a2-2fd3-45eb-9938-07cced1585b6)
+
+#### Products Added To Cart :
+
+![Screenshot (29)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/06b5e904-e2c5-4780-8c41-32ee34bf4773)
+
+
+#### Products Grand Total Show :
+
+![Screenshot (30)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/5027d70b-3a8f-4de0-876b-169449a7bc92)
 
