@@ -9,6 +9,7 @@ import { CartserviceService } from '../cartservice.service';
 export class CartComponent implements OnInit {
   public products:any=[];
   public grandTotal !:number;
+  
 
   constructor(private cartService:CartserviceService) { }
 
@@ -17,8 +18,9 @@ export class CartComponent implements OnInit {
       this.products=res;
       // console.log(res);
       this.grandTotal = this.cartService.getTotalPrice();
+     
 
-      console.log(this.grandTotal);
+      // console.log(this.grandTotal);
       
     })
   }

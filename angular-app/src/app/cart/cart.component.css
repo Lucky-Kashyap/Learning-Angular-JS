@@ -30,8 +30,8 @@ h6 {
 .card-table {
   position: relative;
   display: flex;
-  flex-direction: column;
-  min-width:none;
+  /* flex-direction: column; */
+  min-width:90vw;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
