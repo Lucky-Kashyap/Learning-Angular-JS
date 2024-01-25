@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductsdetailComponent } from './productsdetail/productsdetail.component';
+import { CartComponent } from './cart/cart.component';
 // import { AccessRoutingModule } from './access/access-routing.module';
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ProductsdetailComponent } from './productsdetail/productsdetail.compone
     MainPageComponent,
     ProductsComponent,
     ProductsdetailComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,

@@ -876,22 +876,26 @@
 
   #### Home Page :
 
- ![Screenshot (22)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/89dcd846-0b05-4174-bb18-fcd8cf083bbf)
+![Screenshot (22)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/89dcd846-0b05-4174-bb18-fcd8cf083bbf)
 
+#### Products Section :
 
-  #### Products Section :
+![Screenshot (22)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/647b3b0e-e8ad-4254-86ba-4b769458d395)
 
-  ![Screenshot (22)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/647b3b0e-e8ad-4254-86ba-4b769458d395)
+#### Product Details Page :
 
-  #### Product Details Page :
+![Screenshot (26)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/2965861e-5890-43e6-a100-0eb4e6c09be3)
 
-  ![Screenshot (26)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/2965861e-5890-43e6-a100-0eb4e6c09be3)
+#### Login Page :
 
-  #### Login Page :
+![Screenshot (24)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/56111945-4380-430c-836e-98b0ee01398b)
 
-  ![Screenshot (24)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/56111945-4380-430c-836e-98b0ee01398b)
+#### Register Page :
 
-  #### Register Page :
+![Screenshot (25)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/b3ae4a8c-ff18-43d1-966e-2cb67d178aca)
 
-  ![Screenshot (25)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/b3ae4a8c-ff18-43d1-966e-2cb67d178aca)
+### Build Add To Cart Functionality
 
+- Create cart component and add route to it
+
+        ng g c cart
