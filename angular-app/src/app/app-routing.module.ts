@@ -8,6 +8,7 @@ import { StatusComponent } from './status/status.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductsdetailComponent } from './productsdetail/productsdetail.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {
@@ -45,7 +46,10 @@ const routes: Routes = [
     path: 'product/:id',
     component: ProductsdetailComponent,
   },
-
+{
+  path:'cart',
+  component:CartComponent
+},
   {
     path: 'access',
     loadChildren: () =>
