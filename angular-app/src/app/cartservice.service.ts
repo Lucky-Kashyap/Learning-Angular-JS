@@ -8,11 +8,6 @@ export class CartserviceService {
   public cartItemList: any = [];
   public productList = new BehaviorSubject<any>([]);
 
-  setProduct(productList: any) {
-    this.cartItemList.push(...productList);
-    this.productList.next(productList);
-  }
-
   addToCart(product: any) {
     this.cartItemList.push(product);
     this.productList.next(this.cartItemList);
