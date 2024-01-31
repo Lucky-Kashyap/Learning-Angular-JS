@@ -11,20 +11,20 @@
   color: rgb(17, 168, 148);
 }
 .card-top {
-  /* position: relative; */
+  padding: 0;
   display: flex;
   flex-direction: column;
-  min-width: 100%;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
+  margin-bottom: 3vw;
 }
 
 .card-top .item {
   width: 10vw;
-
+  cursor: pointer;
   padding: 1vw;
   text-align: center;
 }
@@ -33,7 +33,7 @@
 }
 
 .item img {
-  width: 100%;
+  width: 70%;
 }
 
 .item a:hover {

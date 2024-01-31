@@ -943,3 +943,32 @@
 - In Data we have category of products so filter data
 
 - UI is created for filtering by a category
+
+- Filter Category in lifecycle hook
+
+        ngOnInit(): void {
+        this.apiService.getProducts().subscribe((res) => {
+        // console.log(res);
+        this.product = res;
+        this.filterCategory = res;
+        this.product.forEach((a: any) => {
+                if (
+                a.category === "women's clothing" ||
+                a.category === "men's clothing"
+                ) {
+                a.category = 'fashion';
+                }
+
+        });
+        // console.log(this.product);
+        });
+        }
+
+- Add click event on category button and call filter function
+
+        filter(category: string) {
+        this.filterCategory = this.product.filter((a: any) => {
+        if (a.category == category || category == '') {
+                return a;
+        }
+        });
