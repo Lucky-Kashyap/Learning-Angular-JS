@@ -972,3 +972,18 @@
                 return a;
         }
         });
+
+### Handling Form
+
+#### Two Approaches
+
+- Template Driven Form
+
+  - Basic Form we can handle
+  - Easy to use & similar to angular forms
+  - Two way data binding with ngModel
+  - Heavy on the component template
+
+- Reactive Form
+
+  - Heavy on the component class

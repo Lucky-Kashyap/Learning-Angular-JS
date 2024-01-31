@@ -9,15 +9,16 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
   topics = ['Angular', 'React', 'JavaScript'];
 
-  formData = {
-    name: '',
-    email: '',
-    phone: '',
-  };
+  // formData = {
+  //   name: '',
+  //   email: '',
+  //   phone: '',
+  // };
 
   onSubmit(formhandle: NgForm) {
     // console.log(this.formData);
 
-    console.log(formhandle);
+    // console.log(formhandle);
+    console.log(formhandle.value);
   }
 }
