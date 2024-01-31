@@ -938,6 +938,10 @@
         this.productList.next(this.cartItemList);
         }
 
+Remove products from cart :
+
+![Screenshot (35)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/64c6fe26-d83f-495c-8495-541fc7579895)
+
 #### Adding Filtering Functionality category wise
 
 - In Data we have category of products so filter data
@@ -972,6 +976,15 @@
                 return a;
         }
         });
+
+Filter Products by Fashion category :
+
+![Screenshot (32)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/2694e199-e0d6-49ca-b031-a1441503b062)
+
+Filter Products by Jewelery category :
+
+![Screenshot (33)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/d1c72226-3683-4f0b-ab82-b78d1c54d0c3)
+
 
 ### Handling Form
 
