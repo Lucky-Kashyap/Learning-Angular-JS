@@ -984,6 +984,8 @@
   - Two way data binding with ngModel
   - Heavy on the component template
 
+- Console all input values (checkbox, radio, dropdown list)
+
 - Reactive Form
 
   - Heavy on the component class
