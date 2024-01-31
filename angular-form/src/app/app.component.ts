@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { User } from './user';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,15 @@ export class AppComponent {
   //   email: '',
   //   phone: '',
   // };
+
+  userModel = new User(
+    'John',
+    'john@testgmail.com',
+    8978987778,
+    '',
+    'morning',
+    true
+  );
 
   onSubmit(formhandle: NgForm) {
     // console.log(this.formData);

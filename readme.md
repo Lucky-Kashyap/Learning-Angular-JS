@@ -986,6 +986,28 @@
 
 - Console all input values (checkbox, radio, dropdown list)
 
+#### create user class
+
+        ng g class user
+
+- Define data inside class
+
+         export class User {
+        constructor(
+        public name: string,
+
+        public email: string,
+        public phone: number,
+        public topic: string,
+        public timePreference: string,
+        public hobby: boolean
+        ) {}
+        }
+
+- use property binding for data display
+
+        [(ngModel)]="userModel.name"
+
 - Reactive Form
 
   - Heavy on the component class
