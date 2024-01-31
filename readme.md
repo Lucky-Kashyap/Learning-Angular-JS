@@ -1008,6 +1008,15 @@
 
         [(ngModel)]="userModel.name"
 
+- Form control by ngModel Properties
+
+  - ng-untouched : untouched
+  - ng-touched : touched
+  - ng-pristine : pristine
+  - ng-dirty : dirty
+  - ng-valid : Valid
+  - ng-invalid : invalid
+
 - Reactive Form
 
   - Heavy on the component class
