@@ -1017,6 +1017,16 @@
   - ng-valid : Valid
   - ng-invalid : invalid
 
+- use this code inside input
+
+        #name="ngModel"
+
+- print using interpolation in file
+
+         {{ name.untouched }}
+        {{ name.pristine }}
+         {{ name.dirty }}
+
 - Reactive Form
 
   - Heavy on the component class
