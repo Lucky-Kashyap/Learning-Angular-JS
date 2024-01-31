@@ -937,3 +937,9 @@
         this.cartItemList = [];
         this.productList.next(this.cartItemList);
         }
+
+#### Adding Filtering Functionality category wise
+
+- In Data we have category of products so filter data
+
+- UI is created for filtering by a category

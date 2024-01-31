@@ -10,9 +10,38 @@
   font-size: 1.3vw;
   color: rgb(17, 168, 148);
 }
-a{
-    color: #000;
-    text-decoration: none;
+.card-top {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+}
+
+.card-top .item {
+  width: 10vw;
+
+  padding: 1vw;
+  text-align: center;
+}
+.card-top .item h6 {
+  font-size: 1.3vw;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item a:hover {
+  color: blue;
+}
+a {
+  color: #000;
+  text-decoration: none;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
