@@ -35,5 +35,10 @@ export class EmpAddEditComponent implements OnInit {
     });
   }
 
+  onFormSubmit() {
+    if (this.empForm.valid) {
+      console.log(this.empForm.value);
+    }
+  }
   ngOnInit(): void {}
 }

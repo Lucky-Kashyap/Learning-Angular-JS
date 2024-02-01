@@ -1061,3 +1061,11 @@ Filter Products by Jewelery category :
                 openAddEditEmpForm() {
                 this._dialog.open(EmpAddEditComponent);
                 }
+
+- Get Form data values
+
+        onFormSubmit() {
+        if (this.empForm.valid) {
+        console.log(this.empForm.value);
+        }
+        }

@@ -14,8 +14,3 @@
 .action button {
   flex: 1;
 }
-.save {
-  background-color: blue;
-  color: aliceblue;
-  font-size: 1.1vw;
-}

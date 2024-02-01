@@ -1,7 +1,7 @@
 <div mat-dialog-title>
   <h1>Employee Form</h1>
 </div>
-<form [formGroup]="empForm">
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
   <div mat-dialog-content class="content">
     <div class="row">
       <mat-form-field appearance="outline">
@@ -9,13 +9,13 @@
         <input
           matInput
           type="text"
-          placeholder="Ex. Technical"
+          placeholder="Mr. Lucky"
           formControlName="firstName"
         />
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Last Name</mat-label>
-        <input matInput placeholder="Ex. Babaji" formControlName="lastName" />
+        <input matInput placeholder="Mr. Geek" formControlName="lastName" />
       </mat-form-field>
     </div>
 
@@ -25,7 +25,7 @@
         <input
           matInput
           type="email"
-          placeholder="Ex. test@gmail.com"
+          placeholder="test@gmail.com"
           formControlName="email"
         />
       </mat-form-field>
@@ -61,7 +61,7 @@
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Company</mat-label>
-        <input matInput placeholder="Ex. Google" formControlName="company" />
+        <input matInput placeholder="Google" formControlName="company" />
       </mat-form-field>
     </div>
     <div class="row">
@@ -69,7 +69,7 @@
         <mat-label>Experience</mat-label>
         <input
           matInput
-          placeholder="Ex. 4"
+          placeholder="4"
           type="number"
           formControlName="experience"
         />
@@ -78,7 +78,7 @@
         <mat-label>Package</mat-label>
         <input
           matInput
-          placeholder="Ex. 12"
+          placeholder="12"
           type="number"
           formControlName="package"
         />
