@@ -1046,3 +1046,18 @@ Filter Products by Jewelery category :
 ### CRUD APP
 
 - Angular crud application using angular material
+
+#### Angular Material for UI
+
+- Install material
+
+        ng add @angular/material
+
+- create header
+- open dialog box when click on add Employee
+
+          constructor(private _dialog: MatDialog) {}
+
+                openAddEditEmpForm() {
+                this._dialog.open(EmpAddEditComponent);
+                }

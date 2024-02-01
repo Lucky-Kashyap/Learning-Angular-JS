@@ -1,0 +1,9 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.header {
+  height: 15vh;
+  color: aliceblue;
+  font-size: 1.4vw;
+  background-color: blue;
+}
