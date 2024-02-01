@@ -985,7 +985,6 @@ Filter Products by Jewelery category :
 
 ![Screenshot (33)](https://github.com/Lucky-Kashyap/Learning-Angular-JS/assets/88204554/d1c72226-3683-4f0b-ab82-b78d1c54d0c3)
 
-
 ### Handling Form
 
 #### Two Approaches
@@ -1043,3 +1042,7 @@ Filter Products by Jewelery category :
 - Reactive Form
 
   - Heavy on the component class
+
+### CRUD APP
+
+- Angular crud application using angular material
