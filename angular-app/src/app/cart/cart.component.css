@@ -31,7 +31,7 @@ h6 {
   position: relative;
   display: flex;
   /* flex-direction: column; */
-  min-width:90vw;
+  min-width: 90vw;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -46,7 +46,7 @@ h6 {
   padding: 12px 72px;
   border-radius: 3px !important;
 }
-.read-more span{
-    font-size: .8vw;
-    color: red;
+.read-more span {
+  font-size: 0.8vw;
+  color: red;
 }
