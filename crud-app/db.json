@@ -1,13 +1,65 @@
-{
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
+[
+  {
+    "id": "f3af",
+    "productName": "Mango",
+    "productCategory": "Fruits",
+    "date": "2024-02-02T18:30:00.000Z",
+    "freshness": "Brand New",
+    "price": 200,
+    "comment": "This is a Mango"
+  },
+  {
+    "id": "63de",
+    "productName": "Iphone 13",
+    "productCategory": "Electronics",
+    "date": "2024-02-21T18:30:00.000Z",
+    "freshness": "Brand New",
+    "price": 600,
+    "comment": "New iphone"
+  },
+  {
+    "id": "9185",
+    "productName": "Iphone 14",
+    "productCategory": "Electronics",
+    "date": "2024-02-14T18:30:00.000Z",
+    "freshness": "Second Hand",
+    "price": 450,
+    "comment": "second hand iphone"
+  },
+  {
+    "id": "4696",
+    "productName": "grapes",
+    "productCategory": "Fruits",
+    "date": "2024-02-13T18:30:00.000Z",
+    "freshness": "Brand New",
+    "price": 120,
+    "comment": "Grapes"
+  },
+  {
+    "id": "0906",
+    "productName": "Cabbage",
+    "productCategory": "Vegetables",
+    "date": "2024-02-12T18:30:00.000Z",
+    "freshness": "Brand New",
+    "price": 1,
+    "comment": "cabbage"
+  },
+  {
+    "id": "82e1",
+    "productName": "Cauliflower",
+    "productCategory": "Vegetables",
+    "date": "2024-02-02T18:30:00.000Z",
+    "freshness": "Brand New",
+    "price": 1,
+    "comment": "Cauliflower"
+  },
+  {
+    "id": "650c",
+    "productName": "iphone",
+    "productCategory": "Electronics",
+    "date": "2024-02-28T18:30:00.000Z",
+    "freshness": "Brand New",
+    "price": 234,
+    "comment": "sdfsqaf"
   }
-}
+]
