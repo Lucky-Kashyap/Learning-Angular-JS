@@ -1083,3 +1083,8 @@ Filter Products by Jewelery category :
  - use ng update @angular/cli @angular/core --next
 
  
+#### Apply Custom Theme using Angular Material
+
+ - create theme.scss file and include it in angular.json file
+ - define code and use color values & theme
+ 
