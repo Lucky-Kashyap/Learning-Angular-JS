@@ -1069,3 +1069,9 @@ Filter Products by Jewelery category :
         console.log(this.empForm.value);
         }
         }
+
+
+#### Learning Angular Signals (introduced in v16)
+
+ - It detects changes in application and triggers or set it.
+ - It boost up the performance 

@@ -6,18 +6,15 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-
-  
-
-  public getProducts(){
+  public getProducts() {
     return this.httpClient.get('https://fakestoreapi.com/products');
   }
 
 
-  public getProductsById(id:number){
+  public getProductsById(id: number) {
     return this.httpClient.get(`https://fakestoreapi.com/products/${id}`);
   }
-  
+
   // async getData(id:number){
   //   const data = await fetch(`https://fakestoreapi.com/products/${id}`);
   //   const res = await data.json();
@@ -27,5 +24,5 @@ export class ApiService {
   //   return res;
   // }
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 }
