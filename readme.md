@@ -1075,3 +1075,11 @@ Filter Products by Jewelery category :
 
  - It detects changes in application and triggers or set it.
  - It boost up the performance 
+ 
+
+
+#### Changing version to use signal in application
+
+ - use ng update @angular/cli @angular/core --next
+
+ 
