@@ -1088,3 +1088,30 @@ Filter Products by Jewelery category :
  - create theme.scss file and include it in angular.json file
  - define code and use color values & theme
  
+
+        @use '@angular/material' as mat;
+
+        @import '@angular/material/theming';
+
+        @include mat.core();
+
+
+        $my-primary: mat.define-palette(mat.$lime-palette, 300);
+        $my-accent: mat.define-palette(mat.$deep-purple-palette, 300);
+        $my-warn: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+
+        $my-theme: mat.define-light-theme((color: (primary: $my-primary,
+                accent: $my-accent,
+                warn:$my-warn,
+
+        )));
+
+        @include mat.all-component-themes($my-theme);
+
+
+
+- use variable primary, warn and accent in angular
+
+
+        <button mat-raised-button color='accent'>Custom Theme Button</button>   

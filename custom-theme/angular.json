@@ -96,12 +96,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [ { 
-              "input": "src/my-theme.scss" 
-            },
+            "styles": 
+            [
               
-              "src/styles.scss"
+          "src/style.scss",
+          "src/assets/css/my-theme.scss"
             ],
+             
+            
             "scripts": []
           }
         }
