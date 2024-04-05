@@ -19,3 +19,11 @@
 
 
 <button mat-raised-button color="accent">Custom Theme Button</button>
+
+
+
+<div style="width: 640px;height: 390px; overflow : hidden;  position: relative;padding:1vw;" #container>
+  <img src="https://picsum.photos/1600/900/?random?4" (click)="onClick($event)" (mousedown)="onMouseDown($event)"
+    (mousemove)="mouseMoveHandler($event)" #img
+    style="cursor : zoom-in; width:100%; transition: all .3s; position: absolute; border-radius:2vw; " alt="imag" />
+</div>
