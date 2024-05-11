@@ -1070,48 +1070,48 @@ Filter Products by Jewelery category :
         }
         }
 
-
 #### Learning Angular Signals (introduced in v16)
 
- - It detects changes in application and triggers or set it.
- - It boost up the performance 
- 
-
+- It detects changes in application and triggers or set it.
+- It boost up the performance
 
 #### Changing version to use signal in application
 
- - use ng update @angular/cli @angular/core --next
+- use ng update @angular/cli @angular/core --next
 
- 
 #### Apply Custom Theme using Angular Material
 
- - create theme.scss file and include it in angular.json file
- - define code and use color values & theme
- 
+- create theme.scss file and include it in angular.json file
+- define code and use color values & theme
 
-        @use '@angular/material' as mat;
+       @use '@angular/material' as mat;
 
-        @import '@angular/material/theming';
+       @import '@angular/material/theming';
 
-        @include mat.core();
-
-
-        $my-primary: mat.define-palette(mat.$lime-palette, 300);
-        $my-accent: mat.define-palette(mat.$deep-purple-palette, 300);
-        $my-warn: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+       @include mat.core();
 
 
-        $my-theme: mat.define-light-theme((color: (primary: $my-primary,
-                accent: $my-accent,
-                warn:$my-warn,
-
-        )));
-
-        @include mat.all-component-themes($my-theme);
+       $my-primary: mat.define-palette(mat.$lime-palette, 300);
+       $my-accent: mat.define-palette(mat.$deep-purple-palette, 300);
+       $my-warn: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 
+       $my-theme: mat.define-light-theme((color: (primary: $my-primary,
+               accent: $my-accent,
+               warn:$my-warn,
+
+       )));
+
+       @include mat.all-component-themes($my-theme);
 
 - use variable primary, warn and accent in angular
 
+        <button mat-raised-button color='accent'>Custom Theme Button</button>
 
-        <button mat-raised-button color='accent'>Custom Theme Button</button>   
+## Start creating E-Commerce App USing Angular 12
+
+#### Set up project
+
+        ng new ecomm-proj
+
+- Use Angular 12 & node v14.15
